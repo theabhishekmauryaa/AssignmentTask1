@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "809501cf-7a9b-412f-814b-746b2d1fbc4e",
+		"name": "Api_Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40290795",
+		"_collection_link": "https://www.postman.com/docking-module-geologist-74212757/workspace/masailearnworkspace/collection/40290795-809501cf-7a9b-412f-814b-746b2d1fbc4e?action=share&source=collection_link&creator=40290795"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dummyjson.com/recipes"
+			},
+			"response": []
+		},
+		{
+			"name": "singlerecipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://dummyjson.com/recipes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "recipeChiken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummyjson.com/recipes/search?q=chicken",
+					"protocol": "https",
+					"host": [
+						"dummyjson",
+						"com"
+					],
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "chicken"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Spicy Paneer Tikka\",\r\n  \"ingredients\": [\"Paneer\", \"Yogurt\", \"Spices\", \"Lemon Juice\"],\r\n  \"instructions\": \"Mix all ingredients and grill until golden brown.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dummyjson.com/recipes/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Updated chicken Biryani",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Chicken Biryani\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dummyjson.com/recipes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://dummyjson.com/recipes/1"
+			},
+			"response": []
+		}
+	]
+}
